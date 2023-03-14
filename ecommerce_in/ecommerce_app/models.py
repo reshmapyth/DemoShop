@@ -13,7 +13,7 @@ class Category(models.Model):
     class Meta:
         ordering=('name',)
         verbose_name='category'
-        verbose_name_plural='categories'
+        verbose_name_plural=  'categories'
 
     def get_url(self):
         return reverse('ecommerce_app:products_by_category',args=[self.slug])
